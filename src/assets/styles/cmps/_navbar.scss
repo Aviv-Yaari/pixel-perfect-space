@@ -1,0 +1,14 @@
+.navbar {
+  margin-top: 40px;
+  padding: 24px 0;
+  grid-column: 1/3;
+  ol {
+    @include for-wide-layout {
+      gap: 48px;
+    }
+    gap: 37px;
+  }
+  .logo {
+    margin-left: 55px;
+  }
+}

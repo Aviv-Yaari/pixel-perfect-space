@@ -1,0 +1,19 @@
+.carousel-nav {
+  gap: 24px;
+  justify-content: center;
+  @include for-wide-layout {
+    justify-content: flex-start;
+  }
+  .carousel-ball {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    &:not(.active) {
+      background-color: #4e4e4e;
+    }
+    &.active {
+      background-color: #fff;
+    }
+  }
+}

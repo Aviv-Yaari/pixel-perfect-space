@@ -1,0 +1,40 @@
+.crew-page {
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+
+  @include for-wide-layout {
+    flex-direction: row;
+    align-items: unset;
+  }
+
+  > :first-child {
+    margin-bottom: 94px;
+    justify-content: flex-start;
+    :last-child {
+      margin-top: auto;
+    }
+  }
+
+  .page-title {
+    @include for-wide-layout {
+      margin-bottom: 150px;
+    }
+    margin-bottom: 60px;
+  }
+
+  article {
+    text-align: center;
+    margin-bottom: 30px;
+    @include for-wide-layout {
+      text-align: initial;
+    }
+    p {
+      max-width: 444px;
+    }
+  }
+
+  > img {
+    object-fit: cover;
+  }
+}
